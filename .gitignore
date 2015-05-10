@@ -6,3 +6,4 @@ public/index.php
 vendor/*
 tools/*
 App/config.php
+lab/*
