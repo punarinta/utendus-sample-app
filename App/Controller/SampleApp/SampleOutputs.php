@@ -11,6 +11,13 @@ class SampleOutputs
 
     static function json()
     {
-        \View::json(['username' => 'world']);
+        // compile with 'debug' option to access time and memory data
+
+        \View::json(
+        [
+            'username'  => 'world',
+            'time'      => number_format((microtime(1) - $GLOBALS['t1']) * 1000, 2) . ' ms',
+            'memory'    => number_format((memory_get_usage() - $GLOBALS['m1']) / 1024, 2) . ' kB',
+        ]);
     }
 }
