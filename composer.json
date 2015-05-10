@@ -1,0 +1,17 @@
+{
+  "name": "punarinta/utendus-sample-app",
+  "description": "Sample application using Utendus PHP framework",
+  "repositories":
+  [
+    {
+      "type": "vcs",
+      "url": "https://github.com/punarinta/utendus"
+    }
+  ],
+  "require":
+  {
+    "php": ">=5.4.0",
+    "punarinta/utendus": "dev-master",
+    "mandrill/mandrill": "1.0.54"
+  }
+}
